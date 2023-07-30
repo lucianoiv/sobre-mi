@@ -32,12 +32,12 @@ nav a{
     color: #f2f0f0;
     margin: 100px;
     font-family: 'Orbitron', sans-serif;
-    font-size: 2rem;
+    font-size: 1.2rem;
 }
 
 nav a:hover{
     border-radius: 5px;
-    padding: 10px;
+    padding: 2px;
     background-color: #766ae9;
 }
 
@@ -54,7 +54,7 @@ article{
 
 article h2{
     font-family: 'Acme', sans-serif;
-    font-size: 50px;
+    font-size: 40px;
     color: #5950AF;
 }
 
@@ -64,6 +64,7 @@ article ul{
 
 li{
     margin-left: 50px;
+    font-size: 25px;
 }
 
 .intereses{
