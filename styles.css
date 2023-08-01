@@ -1,7 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
+/* importar tipos de fuente */
+@import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');   /* */
 @import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
 
-*{
+*{ /* asterisco para editar todo */
     font-family: 'Acme', sans-serif;
 }
 
@@ -22,7 +23,7 @@ header{
 nav{
     background-color: #5950AF;
     padding: 20px;
-    border-radius: 20px;
+    border-radius: 20px; /* cambiar borde */
     text-align: center;
     margin-bottom: 30px;
 }
@@ -35,7 +36,7 @@ nav a{
     font-size: 1.2rem;
 }
 
-nav a:hover{
+nav a:hover{ /* hover para cambiar el color al pasar mouse por encima */
     border-radius: 5px;
     padding: 2px;
     background-color: #766ae9;
@@ -68,7 +69,7 @@ li{
 }
 
 .intereses{
-    display: inline-block;
+    display: inline-block; /* elemento ocupa solo su contenido */
     background-color: #6A7590;
     box-shadow: 0 0 30px 0 #2C3A43;
     padding: 30px;
@@ -81,12 +82,12 @@ li{
 }
 
 aside{
-    display: grid;
-    grid-template-columns: max-content;
-    grid-template-rows: max-content;
+    display: grid; /* grid para ordenar elementos del aside */
+    grid-template-columns: max-content; /* cantidad de columnas*/
+    grid-template-rows: max-content; /*cantidad de filas */
     justify-items: center;
-    grid-gap: 100px;
-    float: right;
+    grid-gap: 100px; /* espacio entre elementos del grid*/
+    float: right;  /* desplazar a la derecha */
     margin: 20px;
     padding: 50px;
     background-color: #2C3A43;
@@ -99,7 +100,7 @@ img{
     width: 180px;
     height: 220px;
     border-radius: 50%;
-    box-shadow: 0 0 10px 0 #F3F3F2;
+    box-shadow: 0 0 10px 0 #F3F3F2; /* para dar sombra a la imagen */
     align-items: center;
 }
 
