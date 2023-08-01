@@ -77,7 +77,7 @@ li{
 }
 .intereses li,
 .intereses h2{
-    color: #F3F3F2;
+    color: #F3F3F2; /* cambia el color a ambos objetos*/
     
 }
 
