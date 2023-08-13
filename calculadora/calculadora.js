@@ -36,7 +36,6 @@ function mostrar_resultado() {
                     document.getElementById("resultados").innerHTML = x * y;
                     }
   }
-
   function modo(){
     const oscuro = document.getElementById("oscuro");           //primero se obtiene el id del body para agregar o eliminar la clase
     if (oscuro.classList.contains("oscuro")){                   //si esta activo lo desactiva y viceversa
