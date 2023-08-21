@@ -1,0 +1,31 @@
+body{
+    background-image: url("img/background.webp");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.button{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 100;
+}
+
+div{
+    background-color: blueviolet;
+}
+
+.container{
+    width: 90vw;
+    height: 50vw;
+}
+
+.resultado{
+    display: flex;
+}

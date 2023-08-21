@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="rps.css">
+    <title>Rock Paper Scissors</title>
+</head>
+<body>
+    <div class="button">
+        <input type="button" id="btn-rps" onclick="tipoDeJuego(3)">BOTON 1</input>
+        <input type="button" id="btn-rps" onclick="tipoDeJuego(5)">BOTON 2</input>
+    </div>
+    <div id="container" class="container">
+        <h2>PICK ONE</h2>
+        <input type="button" onclick="obtenerJugadaUsuario(rock)" id="rock">ROCK</input>
+        <input type="button" onclick="obtenerJugadaUsuario(paper)" id="paper">PAPER</input>
+        <input type="button" onclick="obtenerJugadaUsuario(scissors)" id="scissors">SCISSORS</input>
+        <div>
+            <input type="button" onclick="obtenerJugadaUsuario(lizard)" id="lizard">LIZARD</input>
+            <input type="button" onclick="obtenerJugadaUsuario(spock)" id="spock">SPOCK</input>
+        </div>
+        <div class="resultado">
+            <h3>Player</h3>
+                <span><img  id="resultado1" src="img/rock.png" alt=""></span>
+            <h3>Computer</h3>
+                <span><img  id="resultado2" src="img/rock.png" alt=""></span>
+        </div>
+        <div class="scoreboard">
+            <h4>player</h4>
+                <p id="player_score">0</p>
+            <h4>Computer</h4>
+                <p id="computer_score">0</p>
+        </div>
+    </div>
+
+    <script src="/rps.js"></script>
+</body>
+</html>
