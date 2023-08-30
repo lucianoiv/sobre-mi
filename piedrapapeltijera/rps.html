@@ -7,30 +7,100 @@
     <title>Rock Paper Scissors</title>
 </head>
 <body>
+    <h1 class="title">YOU CAN PLAY 2 GAMES</h1>
+    <nav>
+        <a href="#rules">ROCK PAPER SCISSORS</a>
+        <a href="#video">ROCK PAPER SCISSORS LIZARD SPOCK</a>
+    </nav>
+
+    <P class="title">Enter your name</P><input type="text" class="nombre" id="nombre" maxlength="10" onkeyup="writeName(this.value)" placeholder="Enter name">
+
+    <h2 class="title">CHOOSE GAME</h2>
+
     <div class="button">
-        <input type="button" id="btn-rps" onclick="tipoDeJuego(3)">BOTON 1</input>
-        <input type="button" id="btn-rps" onclick="tipoDeJuego(5)">BOTON 2</input>
+        <input type="radio" id="btn_rps" onclick="tipoDeJuego(3)" class="jugada" name="tipo"></input>
+        <label for="btn_rps" class="jugada"><img src="img/select.jpg" alt=""></label>
+        
+
+        <input type="radio" id="btn_rpsls" onclick="tipoDeJuego(5)" class="jugada" name="tipo"></input>
+        <label for="btn_rpsls" class="jugada"><img src="img/poster.png" alt=""></label><br>
     </div>
+
     <div id="container" class="container">
-        <h2>PICK ONE</h2>
-        <input type="button" onclick="obtenerJugadaUsuario(rock)" id="rock">ROCK</input>
-        <input type="button" onclick="obtenerJugadaUsuario(paper)" id="paper">PAPER</input>
-        <input type="button" onclick="obtenerJugadaUsuario(scissors)" id="scissors">SCISSORS</input>
-        <div>
-            <input type="button" onclick="obtenerJugadaUsuario(lizard)" id="lizard">LIZARD</input>
-            <input type="button" onclick="obtenerJugadaUsuario(spock)" id="spock">SPOCK</input>
+        <div class="opciones">
+            <button id="rock" type="button" onclick="obtenerJugadaUsuario(rock)"><img src="img/rock.png" alt=""></button>
+            <!-- <label for="rock" class="select">ROCK</label> -->
+
+            <button type="button" onclick="obtenerJugadaUsuario(paper)" id="paper"><img src="img/paper.png" alt=""></button>
+            <!-- <label for="paper" class="select">PAPER</label> -->
+
+            <button type="button" onclick="obtenerJugadaUsuario(scissors)" id="scissors"><img src="img/scissor.png" alt=""></button>
+            <!-- <label for="scissors" class="select">SCISSORS</label> -->
+
+            <button type="button" onclick="obtenerJugadaUsuario(lizard)" id="lizard"><img src="img/locked.png" alt="" id="lizard__btn"></button>
+            <!-- <label for="lizard" class="select" disabled>LIZARD</label> -->
+                        
+            <button type="button" onclick="obtenerJugadaUsuario(spock)" id="spock"><img src="img/locked.png" alt="" id="spock__btn"></button>
+            <!-- <label for="spock" class="select" disabled>SPOCK</label> -->
         </div>
+        
         <div class="resultado">
-            <h3>Player</h3>
-                <span><img  id="resultado1" src="img/rock.png" alt=""></span>
-            <h3>Computer</h3>
-                <span><img  id="resultado2" src="img/rock.png" alt=""></span>
+            <div>
+                <h3 id="player1">player</h3>
+                    <span><img  id="resultado1" src="img/rock.png" alt=""></span>
+            </div>
+            <div>
+                <img id="gameOn" src="" alt="">
+            </div>
+            <div>
+                <h3>Computer</h3>
+                    <span><img id="resultado2" src="img/rock.png" alt=""></span>
+            </div>
         </div>
+
+
         <div class="scoreboard">
-            <h4>player</h4>
-                <p id="player_score">0</p>
-            <h4>Computer</h4>
-                <p id="computer_score">0</p>
+            <div class="scoreboard__div">
+                <h4 id="player2">player</h4>
+                    <p id="player_score">0</p>
+            </div>
+            
+            <div class="reset__btn">
+                <button class="reset__btn" type="button" onclick="reset()">RESET <br> SCORE</button>
+            </div>
+            <div class="scoreboard__div">
+                <h4>Computer</h4>
+                    <p id="computer_score">0</p>
+            </div>
+        </div>
+    </div>
+    <div class="rules"  id="rules">
+        <h3>Really? You don't know hoy to play?!</h3>
+        <h3>RULES FOR ROCK PAPER SCISSORS</h3>
+        <div class="video">
+            <ul>
+                <li>Scissors cuts Paper</li>
+                <li>Paper covers Rock</li>
+                <li>Rock crushes Scissors.</li>
+            </ul>
+        </div>
+    </div>
+    <div class="rules" id="video">
+        <h3>RULES FOR ROCK PAPER SCISSORS LIZARD SPOCK</h3>
+        <div class="video">
+            <ul>
+                <li>Scissors cuts Paper</li>
+                <li>Paper covers Rock</li>
+                <li>Rock crushes Lizard</li>
+                <li>Lizard poisons Spock</li>
+                <li>Spock smashes Scissors</li>
+                <li>Scissors decapitates Lizard</li>
+                <li>Lizard eats Paper</li>
+                <li>Paper disproves Spock</li>
+                <li>Spock vaporizes Rock</li>
+                <li>Rock crushes Scissors.</li>
+            </ul>
+            <video src="/video/video.mp4" width="320" height="240" controls></video>
         </div>
     </div>
 
