@@ -1,6 +1,5 @@
 document.querySelector('#lizard').disabled = true;
 document.querySelector('#spock').disabled = true;
-
 const rock = "img/rock.png";
 const paper = "img/paper.png";
 const scissors = "img/scissor.png";
