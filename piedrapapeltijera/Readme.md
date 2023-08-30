@@ -32,7 +32,7 @@ Luego el juego se reinicia y pueden volver a jugar.
 
 ## Desarrollo de Código
 
-![meme](https://memezila.com/wp-content/When-the-code-is-a-mess-but-it-is-working-properly-meme-1023.png)
+![meme](https://www.ruudharreman.nl/wp-content/uploads/2022/06/image.png)
 
 Me interesó desarrollar ambos juegos porque me parecía un reto implementar más reglas. El código Javascript no fue complejo, debo mejorar muchas prácticas, creo que al no conocer muchas funcionalidades del lenguage acudo a usar lo simple y el codigo se hace mas largo. Hay codigo repetitivo que se podría haber mejorado creando una función. No lo hice por cuestiones de tiempo, y por conveniencia... *si funciona, no lo toco*.<br>
 En si, el código JavaScript no me fue muy dificil porque sabia que es lo que debia hacer cada función, investigue algunas cosas puntuales pero muy poco, más que todo sintaxis. <br>
