@@ -7,21 +7,21 @@
 }
 
 body{
-    background-color: #f2f0f0;
+    background-color: #f7fffe;
     padding: 0px;
     border: 0;
     margin: 50px 50px;
 }
 
 header{
-    color: #2C3A43;
+    color: #0E2954;
     text-align: center;
     letter-spacing: 10px;
     font-size: 20px;
 }
 
 nav{
-    background-color: #5950AF;
+    background-color: #1F6E8C;
     padding: 20px;
     border-radius: 20px; /* cambiar borde */
     text-align: center;
@@ -30,7 +30,7 @@ nav{
 
 nav a{
     text-decoration: none;
-    color: #f2f0f0;
+    color: #f7fffe;
     margin: 100px;
     font-family: 'Orbitron', sans-serif;
     font-size: 1.2rem;
@@ -39,7 +39,7 @@ nav a{
 nav a:hover{ /* hover para cambiar el color al pasar mouse por encima */
     border-radius: 5px;
     padding: 2px;
-    background-color: #766ae9;
+    background-color: #2E8A99;
 }
 
 main{
@@ -56,11 +56,11 @@ article{
 article h2{
     font-family: 'Acme', sans-serif;
     font-size: 40px;
-    color: #5950AF;
+    color: #1F6E8C;
 }
 
 article ul{
-    color: #2C3A43;
+    color: #0E2954;
 }
 
 li{
@@ -71,7 +71,7 @@ li{
 .intereses{
     display: inline-block; /* elemento ocupa solo su contenido */
     background-color: #6A7590;
-    box-shadow: 0 0 30px 0 #2C3A43;
+    box-shadow: 0 0 30px 0 #0E2954;
     padding: 30px;
     border-radius: 2%;
 }
@@ -90,8 +90,8 @@ aside{
     float: right;  /* desplazar a la derecha */
     margin: 20px;
     padding: 50px;
-    background-color: #2C3A43;
-    box-shadow: 0 0 30px 0 #2C3A43;
+    background-color: #0E2954;
+    box-shadow: 0 0 30px 0 #0E2954;
     border-radius: 2%;
 }
 
@@ -111,5 +111,37 @@ video{
 
 footer{
     text-align: center;
-    font-size: 30px;
+    font-size: 10px;
+}
+
+/*========== MEDIA QUERIES ==========*/
+/* For small devices */
+@media screen and (max-width: 620px){
+    nav{
+        
+        padding: 10px;
+        border-radius: 20px; /* cambiar borde */
+        text-align: center;
+        margin-bottom: 0px;
+    }
+
+    img{
+        margin: 20px;
+        width: 150px;
+        height: 200px;
+        border-radius: 50%;
+        box-shadow: 0 0 10px 0 #F3F3F2; /* para dar sombra a la imagen */
+        align-items: center;
+    }
+
+    nav a{
+        margin: 100px;
+        font-size: 1rem;
+    }
+
+
+    footer{
+        text-align: center;
+        font-size: 10px;
+    }
 }
